@@ -18,9 +18,9 @@
  
    const runtriangel = function (n,k) {
     if (n === 1) {
-        return spaces(n-1) + stars(k) + spaces(n-1) + "\n";
+        return spaces(n-1) + stars(k) + "\n";
     }
-      return spaces(n-1) + stars(k) + spaces(n-1) + "\n" + runtriangel(n - 1, k + 2);
+      return spaces(n-1) + stars(k) + "\n" + runtriangel(n - 1, k + 2);
    };
   
 
